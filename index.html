@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio|Timothy Michael</title>
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="logo">TM</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('intro-sec')" href="javascript:void(0)">Home</a></li>
+                <li><a onclick="scrollToSection('about-sec')" href="javascript:void(0)">About</a></li>
+                <li><a onclick="scrollToSection('skills')" href="javascript:void(0)">Skills</a></li>
+                <li><a onclick="scrollToSection('contact-section')" href="javascript:void(0)">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home page -->
+
+    <section id="intro-sec">
+        <div class="bg-spline">
+            <spline-viewer url="https://prod.spline.design/5dV6pRUUmK9surkS/scene.splinecode"></spline-viewer>
+            <div class="content">
+                <p class="p-greetings">Hello, I'm</p>
+                <h1>Timothy <span>Michael</span></h1>
+                <p class="intro-p">Crafting clean code & <span>beautiful interfaces</span></p>
+                <button class="btn-view">View My Work</button>
+                <button class="btn-download">Download My CV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+
+    <section id="about-sec">
+        <div class="container">
+            <div class="about-intro">
+                <h2>About <span>Me</span></h2>
+                <p class="about-p">I am a front-end developer with a passion for creating beautiful and functional web applications.
+                <!-- Add GSAP and your script before closing body tag -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+                <script src="script.js"></script>
+                </p>
+            </div>
+            <div class="about-con">
+                <div class="text-con">
+                    <h3>Frontend Developer & <span>UI/UX</span> Enthusiast</h3>
+                    <p class="p1">
+                        I'm a passionate frontend developer with a deep love for creating beautiful, functional, and <br>user-centered digital
+                        experiences. With expertise in modern web technologies, I transform <br> ideas into pixel-perfect reality.
+                    </p>
+                    <p class="p2">
+                        My approach combines technical precision with creative problem-solving. I believe that <br> great code should be as elegant
+                        as the interfaces it powers, and I'm committed to writing <br>clean, maintainable, and performant solutions.
+                    </p>
+                    <p class="p3">
+                        When I'm not coding, you'll find me exploring the latest design trends, contributing to <br> open-source projects, or
+                        experimenting with new technologies that push the boundaries <br> of what's possible on the web.
+                    </p>
+                    <div class="metrics">
+                        <div class="metric1">
+                            <h2>3+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="metric2">
+                            <h2>50+</h2>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="metric3">
+                            <h2>25+</h2>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-con">
+                    <div class="img-item">
+                        <img src="images/OIP__1_-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Skills & Expertise -->
+
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-text">
+                <h2>Skills & <span>Expertise</span></h2>
+                <p>A comprehensive toolkit for building exceptional web experiences</p>
+            </div>
+            <div class="skills-exp-container">
+                <div class="grid-container">
+                    <div class="grid-tools-1">
+                        <div class="tools-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Frontend Development</h4>
+                        </div>
+                        <p>Building modern, interactive web applications with cutting-edge technologies</p>
+                        <div class="tools-list">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid-tools-2">
+                        <div class="tools-header">
+                            <i class="fa-solid fa-palette"></i>
+                            <h4>UI/UX Design</h4>
+                        </div>
+                        <p>Creating intuitive and beautiful user experiences through thoughtful design</p>
+                        <div class="tools-list">
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid-tools-3">
+                        <div class="tools-header">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <h4>Responsive Design</h4>
+                        </div>
+                        <p>Ensuring seamless experiences across all devices and screen sizes</p>
+                        <div class="tools-list">
+                            <ul>
+                                <li>Mobile First</li>
+                                <li>CSS Grid</li>
+                                <li>FlexBox</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid-tools-4">
+                        <div class="tools-header">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Modern WorkFlow</h4>
+                        </div>
+                        <p>Leveraging modern tools and workflows for efficient development</p>
+                        <div class="tools-list">
+                            <ul>
+                                <li>Git</li>
+                                <li>Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+
+    <section id="contact-section">
+        <div class="con-container">
+            <div class="contact-text">
+                <h2>Let's Work <span>Together</span></h2>
+                <p>Have a project in mind? I'd love to hear from you. Let's create something amazing together.
+                </p>
+            </div>
+            <div class="contact-info-con">
+                <div class="grid-con">
+                    <!-- Contact Form Card -->
+                    <div class="contact-mess-card">
+                        <h3>Send Me a Message</h3>
+                        <form class="contact-form">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always open to discussing new opportunities, creative projects, or just having a friendly conversation about web
+                        development.</p>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info-details">
+                                <h4>Email</h4>
+                                <p>frutotimo@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info-details">
+                                <h4>Phone</h4>
+                                <p>+63 915 970 1662</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-details">
+                                <h4>Location</h4>
+                                <p>Baras Rizal, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" title="fa-facebook-f" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="linkedin" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" title="Github" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">TM</h3>
+                    <p class="footer-description">Building modern web experiences with passion and precision. Let's create
+                        something amazing together.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#intro-sec">Home</a></li>
+                        <li><a href="#about-sec">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i>frutotimo@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +63 915 970 1662</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Baras Riza, Philippines</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Timothy Michael. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.51/build/spline-viewer.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
