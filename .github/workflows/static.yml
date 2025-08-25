@@ -16,6 +16,10 @@ permissions:
   id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+<<<<<<< HEAD
+=======
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+>>>>>>> 11e69531e2d5afe32e08a5b0551f0927015ef41b
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -29,14 +33,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+<<<<<<< HEAD
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+=======
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+>>>>>>> 11e69531e2d5afe32e08a5b0551f0927015ef41b
         with:
           # Upload entire repository
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
+<<<<<<< HEAD
         uses: actions/deploy-pages@v2
+=======
+        uses: actions/deploy-pages@v4
+>>>>>>> 11e69531e2d5afe32e08a5b0551f0927015ef41b
