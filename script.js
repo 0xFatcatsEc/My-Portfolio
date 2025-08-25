@@ -218,3 +218,17 @@ cards.forEach(card => {
         });
     });
 });
+
+// Animate .grid-container on scroll
+const gridContainer = document.querySelector('.grid-container');
+if (gridContainer) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gridContainer.classList.add('animate');
+                observer.unobserve(gridContainer);
+            }
+        });
+    }, { threshold: 0.2 });
+    observer.observe(gridContainer);
+}

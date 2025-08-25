@@ -420,8 +420,13 @@ spline-viewer {
     max-width: 100%;
     font-family: 'poppins', sans-serif;
     opacity: 0;
-    animation: gridContainerFadeIn 0.8s ease-out forwards;
-    animation-delay: 0.2s;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.grid-container.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .grid-tools-1, .grid-tools-2, .grid-tools-3, .grid-tools-4 {
