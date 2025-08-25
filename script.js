@@ -45,17 +45,21 @@ const animationObserver = new IntersectionObserver(
                 
                 // Animate grid container and its items
                 if (element.classList.contains('grid-container')) {
-                    element.style.animation = 'gridContainerFadeIn 0.8s ease-out forwards';
+                    // Add the animate class to trigger the CSS animation
+                    element.classList.add('animate');
                     
                     // Animate grid items with delay
                     element.querySelectorAll('.grid-tools-1, .grid-tools-2, .grid-tools-3, .grid-tools-4').forEach((item, index) => {
-                        item.style.animation = `skillsFadeIn 0.6s ease-out forwards ${0.6 + (index * 0.2)}s`;
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 600 + (index * 200));
                     });
                 }
             }
         });
     },
-    { threshold: 0.2 }
+    { threshold: 0.2, rootMargin: '0px 0px -100px 0px' }
 );
 
 // Observe elements when page loads
